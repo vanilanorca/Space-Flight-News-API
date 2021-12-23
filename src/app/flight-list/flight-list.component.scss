@@ -1,0 +1,97 @@
+.container{
+    padding-bottom: 40px;
+}
+
+.card{
+    display: flex;
+    gap: 30px;
+    width: 65%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    p{
+        padding: 0;
+    }
+
+    .ver-mais{
+        margin-left: 8px;
+        background: #788896ff;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .mat-card-title{
+        line-height: 25px;
+    }
+
+    .mat-card-subtitle{
+        margin-bottom: 0;
+    }
+
+    .article-image{
+        width: 45%;
+        min-width: 45%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.mat-card:not([class*=mat-elevation-z]){
+    box-shadow: none;
+}
+
+.three-dots{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    span{
+        width: 10px;
+        height: 10px;
+        background: #dfe6edff;
+        border: 1px solid #9eadbaff;
+    }
+}
+
+.carregar-mais{
+    background: none;
+    border: 1px solid #c7c2fcff;
+    border-radius: 2px;
+    color: #6558f5ff;
+    padding: 12px 15px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px){
+    .card{
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        
+        margin-top: 40px;
+
+        .article-image{
+            width: 100%;
+            min-width: 100%;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .card:nth-child(odd) {
+        flex-direction: column;
+    }
+}

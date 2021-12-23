@@ -1,0 +1,17 @@
+<mat-card class="card mat-elevation-z6" >
+    <div class="bloco-conteudo">
+        <div class="article-image" style="background-image: url('{{this.articleImage}}');"></div>
+        <span>
+            <mat-card-title>{{this.articleTitle}}</mat-card-title>
+            <span>
+                <mat-card-subtitle>{{this.articlePublishedAt | date: 'dd/MM/yyyy'}}</mat-card-subtitle>
+            </span>
+            <mat-card-content>
+                <p>{{this.articleSummary}}</p>
+            </mat-card-content>
+        </span>
+    </div>
+    <mat-card-actions>
+        <button mat-button class="voltar-site" [routerLink]="['']">Ir para o site</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,28 @@
+<app-header (searchEvent)="pesquisar($event)" (sortEvent)="sort($event)"></app-header>
+<div class="container">
+
+    <mat-card class="card" *ngFor="let article of articleListToShow">
+        <div class="article-image" style="background-image: url('{{this.article.imageUrl}}');"></div>
+        <span>
+            <mat-card-title>{{this.article.title}}</mat-card-title>
+            <span style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <mat-card-subtitle>{{this.article.publishedAt | date: 'dd/MM/yyyy'}} </mat-card-subtitle>
+                <button mat-button disabled>{{this.article.newsSite}}</button>
+            </span>
+            <mat-card-content>
+                <p>{{this.article.summary}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button class="ver-mais" [routerLink]="['/details', this.article.id]">Ver Mais</button>
+            </mat-card-actions>
+        </span>
+    </mat-card>
+
+    <div class="three-dots" *ngIf="this.showButton">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+    </div>
+
+    <button mat-button class="carregar-mais" (click)="showMore()" *ngIf="this.showButton">Carregar Mais</button>
+</div>

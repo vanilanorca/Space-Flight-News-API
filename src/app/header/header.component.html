@@ -1,0 +1,29 @@
+<header>
+    <div class="menu">
+        <!-- Search input -->
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Search</mat-label>
+                <input matInput placeholder="Search" (input)="pesquisar()" [(ngModel)]="textSearch">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </p>
+
+        <mat-form-field appearance="outline" class="sort">
+            <mat-label>Sort</mat-label>
+            <mat-select [(value)]="this.selected" (selectionChange)="sort(this.selected)">
+                <mat-option value="recent">Mais recentes</mat-option>
+                <mat-option value="oldest">Mais antigas</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class="logo-container">
+        <img src="../../assets/logo.jpg" alt="">
+        <h1>Space Flight News</h1>
+    </div>
+
+    <hr>
+
+</header>
+

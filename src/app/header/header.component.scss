@@ -1,0 +1,44 @@
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+// Accordion Header
+.mat-form-field:nth-child(1){
+    margin-top: 12px;
+}
+
+// logo container
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 60px 0;
+
+    img{
+        width: 124px;
+        margin: 15px 0 ;
+    }
+
+    h1{
+        color: #293845ff;
+    }
+}
+
+@media (max-width: 768px){
+    .menu{
+        justify-content: center;
+        flex-direction: column;
+
+        .mat-form-field{
+            width: 200px;
+        }
+
+        .mat-form-field:nth-child(1){
+            margin-top: 0px;
+        }
+    }
+}

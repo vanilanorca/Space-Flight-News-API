@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 65%;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 50px;
+
+    .bloco-conteudo{
+        display: flex;
+        gap: 40px;
+    }
+
+    .article-image{
+        width: 45%;
+        min-width: 45%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.voltar-site{
+    background: #788896ff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 12px 15px;
+    margin: 0 auto;
+    display: block;
+}
