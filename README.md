@@ -1,3 +1,31 @@
+Projeto: Space Flight News API
+
+Descrição: Projeto com objetivo de listar notícias sobre voos espaciais através do consumo da API 'spaceflightnewsapi'
+
+Linguagem, framework e/ou tecnologias usadas: Angular, SCSS, Angular Material
+
+Como instalar e usar o projeto:
+Abra o repositorio do projeto no github, clique em "Code", "Download Zip" para baixar o projeto, abra o mesmo em sua IDE de preferencia para rodá-lo em algular, digite 'ng serve' na sua linha de comando para rodar o projeto.
+
+Link da apresentação do projeto: https://www.youtube.com/watch?v=I46loHlNXLg
+A plataforma solicitada para o vídeo: Loom estava fora do ar, então upei o video para o youtube no link acima
+
+>  This is a challenge by [Coodesh](https://coodesh.com/)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # SpaceFlightNews
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
